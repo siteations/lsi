@@ -11,15 +11,17 @@ class Tab extends Component {
   constructor(props) {
    super(props);
    this.state = {};
+   this.updateTab = this.updateTab.bind(this);
  }
 
  updateTab(type,content,value){
-    console.log(type,content,value);
     this.props.setPanesTabs(type,content,value);
     this.props.setUpdate(true);
  }
 
   render(){
+
+    this.props.buttons
 
   	return (
       <div className='row tabSets' style={{height: '33px'}}>
@@ -55,7 +57,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     setPanesTabs: (type, content, tab) => {
         dispatch(setPanesTabs(type, content, tab));
     },
-    setUpdate: (bool) =>{
+    setUpdate: (bool) => {
       dispatch(setUpdate(bool));
     },
   }

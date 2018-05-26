@@ -15,9 +15,9 @@ import {fade} from 'material-ui/utils/colorManipulator';
 
 import Search from './components/Search.js';
 import Chapternav from './components/ChapterNav.js';
-import FullPane from './components/FullPane.js';
-import CorePane  from './components/CorePane.js';
-import AccordPane from './components/AccordPane.js';
+import PaneFull from './components/PaneFull.js';
+import PaneCore  from './components/PaneCore.js';
+import PaneAccord from './components/PaneAccord.js';
 import Section from './components/scroll.js';
 
 
@@ -81,13 +81,13 @@ class App extends Component {
           <div className='col-11'>
             {!this.props.pane.fullscreen &&
             <div className="row">
-              <CorePane history={this.props.history} />
-              <AccordPane history={this.props.history} />
+              <PaneCore history={this.props.history} />
+              <PaneAccord history={this.props.history} />
             </div>
             }
             {this.props.pane.fullscreen &&
               <div>
-              <FullPane history={this.props.history} />
+              <PaneFull history={this.props.history} />
               </div>
             }
           </div>

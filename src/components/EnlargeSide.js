@@ -12,6 +12,8 @@ class EnlargeS extends Component {
   constructor(props) {
    super(props);
    this.state = {};
+   this.togglePaneT = this.togglePaneT.bind(this);
+   this.togglePaneB = this.togglePaneB.bind(this);
  }
 
  togglePaneT(){

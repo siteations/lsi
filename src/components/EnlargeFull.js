@@ -13,6 +13,8 @@ class EnlargeFull extends Component {
   constructor(props) {
    super(props);
    this.state = {};
+   this.expand = this.expand.bind(this);
+   this.compress = this.compress.bind(this);
  }
 
  	expand(){
