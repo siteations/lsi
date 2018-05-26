@@ -5,6 +5,7 @@
   "main": "app.js",
   "author": "meg studer",
   "license": "ISC",
+  "homepage": "http://people.virginia.edu/~ms5kh/",
   "dependencies": {
     "axios": "^0.18.0",
     "bluebird": "^3.5.1",
@@ -16,7 +17,16 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",
-    "react-waypoint": "^8.0.1"
+    "react-waypoint": "^8.0.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "history": "^4.7.2",
+    "mapbox-gl": "^0.43.0",
+    "material-ui": "^0.19.4",
+    "scroll-to-element": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
